@@ -119,13 +119,6 @@ extension Characters.Search.Character {
         }
     }
 }
-// MARK: - Thumbnail Orientation
-extension Characters.Search.Character {
-    enum ThumbnailOrientation :String {
-        case landscape = "landscape_incredible."
-        case portrait = "portrait_uncanny."
-    }
-}
 // MARK: - URLElement
 extension Characters.Search.Character {
     struct URLElement: Codable {

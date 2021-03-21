@@ -32,7 +32,7 @@ class HomeScenePresneter: HomeScenePresentationLogic {
             let series = charcter.series.items.map{$0.name}.joined(separator: ",")
             let stories = charcter.stories.items.map{$0.name}.joined(separator: ",")
             let events = charcter.events.items.map{$0.name}.joined(separator: ",")
-            let imageURL = charcter.thumbnail.path + "/" + Characters.Search.Character.ThumbnailOrientation.portrait.rawValue + charcter.thumbnail.thumbnailExtension
+            let imageURL = "\(charcter.thumbnail.path)/\(CharacterDetailsScene.Constants.ImageSize.Portrait.uncanny.rawValue).\(charcter.thumbnail.thumbnailExtension)"
             
             let viewModel = HomeScene.Search.ViewModel(name: charcter.name,
                                                        desc: charcter.resultDescription,

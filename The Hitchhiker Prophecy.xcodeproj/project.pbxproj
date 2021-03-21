@@ -47,6 +47,9 @@
 		BE1EBEA92607993200006DE0 /* HomeSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1EBEA82607993200006DE0 /* HomeSceneView.xib */; };
 		BE1EBEB92607A6C000006DE0 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
 		BE1EBEC22607CA6D00006DE0 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBEC12607CA6D00006DE0 /* String+MD5.swift */; };
+		BE1EBECE2607EF4500006DE0 /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBECD2607EF4500006DE0 /* FlipPresentAnimationController.swift */; };
+		BE1EBED22607EFB100006DE0 /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBED12607EFB100006DE0 /* FlipDismissAnimationController.swift */; };
+		BE1EBEDC2607FD8500006DE0 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBEDB2607FD8500006DE0 /* AnimationHelper.swift */; };
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +110,9 @@
 		BE1EBEA4260798BE00006DE0 /* HomeSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneView.swift; sourceTree = "<group>"; };
 		BE1EBEA82607993200006DE0 /* HomeSceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSceneView.xib; sourceTree = "<group>"; };
 		BE1EBEC12607CA6D00006DE0 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		BE1EBECD2607EF4500006DE0 /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipPresentAnimationController.swift; sourceTree = "<group>"; };
+		BE1EBED12607EFB100006DE0 /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipDismissAnimationController.swift; sourceTree = "<group>"; };
+		BE1EBEDB2607FD8500006DE0 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -295,6 +301,7 @@
 		76C7AE4B2498030A0053EF25 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BE1EBECA2607EF1D00006DE0 /* AnimationTransitions */,
 				01D65F63249138A30082F8FF /* HomeSceneViewController.swift */,
 				76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */,
 				BE1EBEA4260798BE00006DE0 /* HomeSceneView.swift */,
@@ -363,6 +370,16 @@
 				76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		BE1EBECA2607EF1D00006DE0 /* AnimationTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				BE1EBECD2607EF4500006DE0 /* FlipPresentAnimationController.swift */,
+				BE1EBED12607EFB100006DE0 /* FlipDismissAnimationController.swift */,
+				BE1EBEDB2607FD8500006DE0 /* AnimationHelper.swift */,
+			);
+			path = AnimationTransitions;
 			sourceTree = "<group>";
 		};
 		EE489723C61A1E6A67306417 /* Pods */ = {
@@ -527,6 +544,7 @@
 				76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */,
 				A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */,
 				019ACF7C24925D14003E3ECF /* NetworkConstants.swift in Sources */,
+				BE1EBED22607EFB100006DE0 /* FlipDismissAnimationController.swift in Sources */,
 				76C7AE442497B7370053EF25 /* CharacterDetailsSceneProtocols.swift in Sources */,
 				A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */,
 				76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */,
@@ -542,6 +560,7 @@
 				019ACF8124925E15003E3ECF /* CharacterRouter.swift in Sources */,
 				76C7AE3F2497AFBE0053EF25 /* HomeSceneRouter.swift in Sources */,
 				A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */,
+				BE1EBEDC2607FD8500006DE0 /* AnimationHelper.swift in Sources */,
 				019ACF8C24926E0E003E3ECF /* Encodable+Dictionary.swift in Sources */,
 				01AD2904249571C9006AF9D0 /* HomeSceneInteractor.swift in Sources */,
 				019ACF89249268BA003E3ECF /* CharactersSearch.swift in Sources */,
@@ -549,6 +568,7 @@
 				BE1EBEC22607CA6D00006DE0 /* String+MD5.swift in Sources */,
 				01D65F60249138A30082F8FF /* AppDelegate.swift in Sources */,
 				019ACF8E24926F55003E3ECF /* NetworkService.swift in Sources */,
+				BE1EBECE2607EF4500006DE0 /* FlipPresentAnimationController.swift in Sources */,
 				01D65F8424913BD40082F8FF /* Request.swift in Sources */,
 				019ACF8324925EB5003E3ECF /* URL_Generator.swift in Sources */,
 				76C7AE3B2497AF3F0053EF25 /* CharacterDetailsSceneConfigurator.swift in Sources */,

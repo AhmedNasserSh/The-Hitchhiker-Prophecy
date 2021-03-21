@@ -22,6 +22,9 @@ class HomeSceneView: UIView {
     var layout :UICollectionViewFlowLayout?
     let cellPeekWidth = CGFloat(10)
     var  currentScrollOffset :CGPoint?
+    var selectedFrame : CGRect?
+    var selectedIndex :Int = 0
+    
     var itemWidth : CGFloat? {
         return max(0, collectionView.frame.size.width - 2 * (itemSpacing + cellPeekWidth))
     }
@@ -53,7 +56,7 @@ class HomeSceneView: UIView {
         changeLayoutButton.isUserInteractionEnabled = false
         horizontalOrientiation = !horizontalOrientiation
     }
-
+    
 }
 // MARK: - UI Setup
 extension HomeSceneView {
@@ -104,7 +107,7 @@ extension HomeSceneView {
         layout?.scrollDirection = .vertical
         animateLayoutChange(animated: animated)
     }
-
+    
     func animateLayoutChange(animated:Bool = true){
         collectionView.setCollectionViewLayout(layout!, animated: animated)
         self.changeLayoutButton.isUserInteractionEnabled = true
@@ -118,12 +121,12 @@ extension HomeSceneView {
 extension HomeSceneView {
     func adjustHorizontalCell(scrollView: UIScrollView,withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) -> CGPoint? {
         if !horizontalOrientiation { return nil}
-
+        
         let pageWidth = Float((itemWidth ?? 0 ) + itemSpacing)
         let targetXContentOffset = Float(targetContentOffset.pointee.x)
         let contentWidth = Float(collectionView!.contentSize.width  )
         var newPage = Float(currentPage)
-
+        
         if velocity.x == 0 {
             newPage = floor( (targetXContentOffset - Float(pageWidth) / 2) / Float(pageWidth)) + 1.0
         } else {
@@ -137,5 +140,13 @@ extension HomeSceneView {
         }
         currentPage = Int(newPage)
         return CGPoint (x: CGFloat(newPage * pageWidth) , y: targetContentOffset.pointee.y)
+    }
+}
+// MARK: HomeCharacterCollectionViewCell Animation
+extension HomeSceneView  {
+    func setSelectedCellFrame(indexPath: IndexPath) {
+        let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
+        selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview)
+        selectedIndex = indexPath.row
     }
 }

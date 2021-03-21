@@ -19,6 +19,6 @@ extension HomeSceneRouter: HomeSceneRoutingLogic {
     func routeToCharacterDetailsWithCharacter(at index: Int) {
         guard let character = dataStore?.result?.results[index] else { return }
         let characterDetailsViewController = CharacterDetailsSceneConfigurator.configure(with: character)
-        viewController?.present(characterDetailsViewController, animated: true)
+        viewController?.navigationController?.pushViewController(characterDetailsViewController, animated: true)
     }
 }

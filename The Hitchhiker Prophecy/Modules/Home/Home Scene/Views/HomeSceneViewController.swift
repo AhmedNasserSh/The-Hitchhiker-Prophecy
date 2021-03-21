@@ -31,6 +31,7 @@ class HomeSceneViewController: UIViewController {
         homeSceneView?.collectionView.dataSource = self
         homeSceneView.setCollectionViewLayout(animated: false)
         reloadButton.layer.cornerRadius = 8
+        navigationController?.delegate = self
     }
     
     override func viewDidLoad() {
@@ -42,7 +43,7 @@ class HomeSceneViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated);
         super.viewWillDisappear(animated)
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -79,6 +80,7 @@ extension HomeSceneViewController: HomeSceneDisplayView {
         homeSceneView.isHidden = true
     }
 }
+
 // MARK: - Collection View DataSource
 extension HomeSceneViewController :UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -95,22 +97,40 @@ extension HomeSceneViewController :UICollectionViewDataSource {
         return cell ?? UICollectionViewCell()
     }
 }
+
 //MARK: - Collection View Delegate
 extension HomeSceneViewController :UICollectionViewDelegate ,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        homeSceneView.setSelectedCellFrame(indexPath: indexPath)
         router?.routeToCharacterDetailsWithCharacter(at: indexPath.row)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.homeSceneView.itemWidth ?? 0, height:self.homeSceneView.itemHeight ?? 0)
     }
 }
+
 // MARK: - ScrollViewDelegate
 extension HomeSceneViewController {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         homeSceneView.currentScrollOffset = scrollView.contentOffset
     }
+    
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let currentPoint = homeSceneView?.adjustHorizontalCell(scrollView:scrollView,withVelocity: velocity, targetContentOffset: targetContentOffset)
         targetContentOffset.pointee = currentPoint ?? targetContentOffset.pointee
     }
 }
+
+//MARK: - Transition Animation Delegate
+extension HomeSceneViewController : UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        switch operation {
+        case .push:
+            return FlipPresentAnimationController(originFrame: homeSceneView.selectedFrame!)
+        default:
+            return FlipDismissAnimationController(destinationFrame: homeSceneView.selectedFrame!)
+        }
+    }
+}
+
