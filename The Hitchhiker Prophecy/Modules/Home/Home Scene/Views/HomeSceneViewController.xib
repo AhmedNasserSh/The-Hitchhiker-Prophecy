@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeSceneViewController" customModule="The_Hitchhiker_Prophecy" customModuleProvider="target">
             <connections>
+                <outlet property="homeSceneView" destination="Mt4-Mi-Id3" id="t9d-Se-tjs"/>
                 <outlet property="view" destination="WGk-3c-KKJ" id="Olq-EN-8do"/>
             </connections>
         </placeholder>
         <view contentMode="scaleToFill" id="WGk-3c-KKJ">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mt4-Mi-Id3" customClass="HomeSceneView" customModule="The_Hitchhiker_Prophecy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="p9K-a1-ut4"/>
+            <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Mt4-Mi-Id3" firstAttribute="leading" secondItem="p9K-a1-ut4" secondAttribute="leading" id="ZjW-eI-WX8"/>
+                <constraint firstItem="p9K-a1-ut4" firstAttribute="trailing" secondItem="Mt4-Mi-Id3" secondAttribute="trailing" id="jtZ-w9-KA9"/>
+                <constraint firstItem="p9K-a1-ut4" firstAttribute="bottom" secondItem="Mt4-Mi-Id3" secondAttribute="bottom" id="olW-gZ-g2P"/>
+                <constraint firstItem="Mt4-Mi-Id3" firstAttribute="top" secondItem="p9K-a1-ut4" secondAttribute="top" id="xa6-Qa-FL6"/>
+            </constraints>
             <point key="canvasLocation" x="187" y="145"/>
         </view>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
+    <resources>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

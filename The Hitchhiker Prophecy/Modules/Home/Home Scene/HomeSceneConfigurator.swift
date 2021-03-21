@@ -10,7 +10,8 @@ import UIKit
 
 enum HomeSceneConfigurator {
     static func configure() -> UINavigationController {
-        let viewController = HomeSceneViewController()
+        
+        let viewController = HomeSceneViewController.instanceFromNib()
         let presenter = HomeScenePresneter(displayView: viewController)
         let worker = HomeSearchWorker()
         let interactor = HomeSceneInteractor(worker: worker, presenter: presenter)

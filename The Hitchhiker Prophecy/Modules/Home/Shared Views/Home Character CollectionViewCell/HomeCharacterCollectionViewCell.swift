@@ -13,6 +13,9 @@ class HomeCharacterCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var characterNameLabel: UILabel!
     @IBOutlet private weak var characterImageView: UIImageView!
     
+    // MARK: - Properties
+    static var identifier =  "HomeCharacterCollectionViewCell"
+    
     // MARK: - Life Cycle
     override func awakeFromNib() {
         characterImageView.layer.cornerRadius = 8
