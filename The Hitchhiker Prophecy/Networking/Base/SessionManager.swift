@@ -14,7 +14,6 @@ extension SessionManager {
     func request<V>(_ request: Request<V>, completion: @escaping (Swift.Result<V, NetworkError>) -> Void) -> URLSessionTask? {
         
         let dataRequest = self.request(request).validate().responseJSON { response in
-            
             var result: Swift.Result<V, NetworkError>
             switch response.result {
             case .success(let value):

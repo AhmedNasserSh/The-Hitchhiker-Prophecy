@@ -113,14 +113,19 @@ extension Characters.Search.Character {
     struct Thumbnail: Codable {
         let path: String
         let thumbnailExtension: String
-        
         enum CodingKeys: String, CodingKey {
             case path
             case thumbnailExtension = "extension"
         }
     }
 }
-
+// MARK: - Thumbnail Orientation
+extension Characters.Search.Character {
+    enum ThumbnailOrientation :String {
+        case landscape = "landscape_incredible."
+        case portrait = "portrait_uncanny."
+    }
+}
 // MARK: - URLElement
 extension Characters.Search.Character {
     struct URLElement: Codable {

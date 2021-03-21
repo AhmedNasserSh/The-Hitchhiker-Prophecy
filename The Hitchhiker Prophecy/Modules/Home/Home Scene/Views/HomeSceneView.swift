@@ -29,7 +29,7 @@ class HomeSceneView: UIView {
         if horizontalOrientiation {
             return self.collectionView.frame.height - 40
         }
-        return 200
+        return 250
     }
     var horizontalOrientiation = true {
         didSet {
@@ -73,16 +73,11 @@ extension HomeSceneView {
         return nibView
     }
     
-    func initCollectionViewLayout() {
-        setCollectionViewLayout()
-        collectionView.collectionViewLayout = layout!
-        animateLayoutChange()
-    }
 }
 
 //MARK: - Collection View Layout Change
 extension HomeSceneView {
-    func setCollectionViewLayout() {
+    func setCollectionViewLayout(animated:Bool = true) {
         if horizontalOrientiation {
             setHorizontalLayout()
         }else {
@@ -90,7 +85,7 @@ extension HomeSceneView {
         }
     }
     
-    func setHorizontalLayout() {
+    func setHorizontalLayout(animated:Bool = true) {
         layout = UICollectionViewFlowLayout()
         layout?.scrollDirection = .horizontal
         currentPage = 0
@@ -101,18 +96,22 @@ extension HomeSceneView {
         layout?.minimumLineSpacing = itemSpacing
         layout?.scrollDirection = .horizontal
         collectionView?.decelerationRate = UIScrollView.DecelerationRate.fast
-        animateLayoutChange()
+        animateLayoutChange(animated: animated)
     }
     
-    func setVerticalLayout() {
+    func setVerticalLayout(animated:Bool = true) {
         layout = UICollectionViewFlowLayout()
         layout?.scrollDirection = .vertical
-        animateLayoutChange()
+        animateLayoutChange(animated: animated)
     }
 
-    func animateLayoutChange(){
-        collectionView.setCollectionViewLayout(layout!, animated: true)
+    func animateLayoutChange(animated:Bool = true){
+        collectionView.setCollectionViewLayout(layout!, animated: animated)
         self.changeLayoutButton.isUserInteractionEnabled = true
+    }
+    
+    func reloadCollectionView() {
+        collectionView.reloadData()
     }
 }
 //MARK: - Collection View Paging
@@ -137,7 +136,6 @@ extension HomeSceneView {
             }
         }
         currentPage = Int(newPage)
-        print(CGFloat(newPage * pageWidth) ,targetXContentOffset,newPage)
         return CGPoint (x: CGFloat(newPage * pageWidth) , y: targetContentOffset.pointee.y)
     }
 }

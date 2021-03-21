@@ -46,6 +46,7 @@
 		BE1EBEA5260798BF00006DE0 /* HomeSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBEA4260798BE00006DE0 /* HomeSceneView.swift */; };
 		BE1EBEA92607993200006DE0 /* HomeSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1EBEA82607993200006DE0 /* HomeSceneView.xib */; };
 		BE1EBEB92607A6C000006DE0 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
+		BE1EBEC22607CA6D00006DE0 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBEC12607CA6D00006DE0 /* String+MD5.swift */; };
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
 		BE1EBEA4260798BE00006DE0 /* HomeSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneView.swift; sourceTree = "<group>"; };
 		BE1EBEA82607993200006DE0 /* HomeSceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSceneView.xib; sourceTree = "<group>"; };
+		BE1EBEC12607CA6D00006DE0 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				019ACF8B24926E0E003E3ECF /* Encodable+Dictionary.swift */,
+				BE1EBEC12607CA6D00006DE0 /* String+MD5.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				01AD2904249571C9006AF9D0 /* HomeSceneInteractor.swift in Sources */,
 				019ACF89249268BA003E3ECF /* CharactersSearch.swift in Sources */,
 				019ACF7F24925DFE003E3ECF /* Router.swift in Sources */,
+				BE1EBEC22607CA6D00006DE0 /* String+MD5.swift in Sources */,
 				01D65F60249138A30082F8FF /* AppDelegate.swift in Sources */,
 				019ACF8E24926F55003E3ECF /* NetworkService.swift in Sources */,
 				01D65F8424913BD40082F8FF /* Request.swift in Sources */,

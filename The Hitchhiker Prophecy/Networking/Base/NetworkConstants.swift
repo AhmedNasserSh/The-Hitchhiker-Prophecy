@@ -10,6 +10,6 @@ import Foundation
 
 enum NetworkConstants {
     static let baseUrl = "https://gateway.marvel.com"
-    static let publicKey = "" // TODO: Add your marvel keys
-    static let privateKey = "" // TODO: Add your marvel keys
+    static let publicKey = "a42e6731b69929a29be34750ad11f398"
+    static let privateKey = "fac04f90412ab80cac9e897daf6505bd730bc3b5" 
 }
