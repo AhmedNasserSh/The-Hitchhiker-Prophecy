@@ -50,6 +50,15 @@
 		BE1EBECE2607EF4500006DE0 /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBECD2607EF4500006DE0 /* FlipPresentAnimationController.swift */; };
 		BE1EBED22607EFB100006DE0 /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBED12607EFB100006DE0 /* FlipDismissAnimationController.swift */; };
 		BE1EBEDC2607FD8500006DE0 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1EBEDB2607FD8500006DE0 /* AnimationHelper.swift */; };
+		BE819C312608ADA50010F6B4 /* HomeSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C302608ADA50010F6B4 /* HomeSceneInteractorTests.swift */; };
+		BE819C372608B4FB0010F6B4 /* HomeScenePresneterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C362608B4FB0010F6B4 /* HomeScenePresneterMock.swift */; };
+		BE819C3D2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C3C2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift */; };
+		BE819C822608D7AE0010F6B4 /* CharactersResponseData.json in Resources */ = {isa = PBXBuildFile; fileRef = BE819C812608D7AE0010F6B4 /* CharactersResponseData.json */; };
+		BE819C8A2608D8AE0010F6B4 /* MockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C892608D8AE0010F6B4 /* MockHelper.swift */; };
+		BE819C972608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C962608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift */; };
+		BE819CA12608EB410010F6B4 /* HomeScenePresneterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CA02608EB410010F6B4 /* HomeScenePresneterTests.swift */; };
+		BE819CA52608EFE30010F6B4 /* HomeSceneInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CA42608EFE30010F6B4 /* HomeSceneInteractorMock.swift */; };
+		BE819CA92608F0A00010F6B4 /* HomeSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CA82608F0A00010F6B4 /* HomeSceneViewControllerTests.swift */; };
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +122,15 @@
 		BE1EBECD2607EF4500006DE0 /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipPresentAnimationController.swift; sourceTree = "<group>"; };
 		BE1EBED12607EFB100006DE0 /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipDismissAnimationController.swift; sourceTree = "<group>"; };
 		BE1EBEDB2607FD8500006DE0 /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
+		BE819C302608ADA50010F6B4 /* HomeSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneInteractorTests.swift; sourceTree = "<group>"; };
+		BE819C362608B4FB0010F6B4 /* HomeScenePresneterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresneterMock.swift; sourceTree = "<group>"; };
+		BE819C3C2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneWorkerTypeMock.swift; sourceTree = "<group>"; };
+		BE819C812608D7AE0010F6B4 /* CharactersResponseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharactersResponseData.json; sourceTree = "<group>"; };
+		BE819C892608D8AE0010F6B4 /* MockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHelper.swift; sourceTree = "<group>"; };
+		BE819C962608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneDisplayViewMock.swift; sourceTree = "<group>"; };
+		BE819CA02608EB410010F6B4 /* HomeScenePresneterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresneterTests.swift; sourceTree = "<group>"; };
+		BE819CA42608EFE30010F6B4 /* HomeSceneInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneInteractorMock.swift; sourceTree = "<group>"; };
+		BE819CA82608F0A00010F6B4 /* HomeSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewControllerTests.swift; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -241,6 +259,7 @@
 		01D65F7824913A160082F8FF /* The Hitchhiker ProphecyTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE819C2C2608AD120010F6B4 /* HomSceneTests */,
 				01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */,
 				01D65F7B24913A160082F8FF /* Info.plist */,
 			);
@@ -382,6 +401,54 @@
 			path = AnimationTransitions;
 			sourceTree = "<group>";
 		};
+		BE819C2C2608AD120010F6B4 /* HomSceneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE819C2F2608AD590010F6B4 /* Classes */,
+				BE819C2D2608AD250010F6B4 /* Support */,
+			);
+			path = HomSceneTests;
+			sourceTree = "<group>";
+		};
+		BE819C2D2608AD250010F6B4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BE819C882608D89D0010F6B4 /* Helpers */,
+				BE819C2E2608AD310010F6B4 /* Mocks */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BE819C2E2608AD310010F6B4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BE819C362608B4FB0010F6B4 /* HomeScenePresneterMock.swift */,
+				BE819C3C2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift */,
+				BE819C962608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift */,
+				BE819CA42608EFE30010F6B4 /* HomeSceneInteractorMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BE819C2F2608AD590010F6B4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE819C302608ADA50010F6B4 /* HomeSceneInteractorTests.swift */,
+				BE819CA02608EB410010F6B4 /* HomeScenePresneterTests.swift */,
+				BE819CA82608F0A00010F6B4 /* HomeSceneViewControllerTests.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BE819C882608D89D0010F6B4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BE819C812608D7AE0010F6B4 /* CharactersResponseData.json */,
+				BE819C892608D8AE0010F6B4 /* MockHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EE489723C61A1E6A67306417 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +554,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE819C822608D7AE0010F6B4 /* CharactersResponseData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +650,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE819CA92608F0A00010F6B4 /* HomeSceneViewControllerTests.swift in Sources */,
+				BE819C8A2608D8AE0010F6B4 /* MockHelper.swift in Sources */,
+				BE819C372608B4FB0010F6B4 /* HomeScenePresneterMock.swift in Sources */,
+				BE819C3D2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift in Sources */,
+				BE819CA12608EB410010F6B4 /* HomeScenePresneterTests.swift in Sources */,
+				BE819CA52608EFE30010F6B4 /* HomeSceneInteractorMock.swift in Sources */,
+				BE819C972608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift in Sources */,
+				BE819C312608ADA50010F6B4 /* HomeSceneInteractorTests.swift in Sources */,
 				01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,7 +808,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6267355CA;
 				INFOPLIST_FILE = "The Hitchhiker Prophecy/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -752,7 +828,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R6267355CA;
 				INFOPLIST_FILE = "The Hitchhiker Prophecy/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

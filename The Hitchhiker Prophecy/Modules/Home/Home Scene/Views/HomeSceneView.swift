@@ -142,7 +142,7 @@ extension HomeSceneView {
         return CGPoint (x: CGFloat(newPage * pageWidth) , y: targetContentOffset.pointee.y)
     }
 }
-// MARK: HomeCharacterCollectionViewCell Animation
+// MARK: HomeCharacterCollectionViewCell Animation 
 extension HomeSceneView  {
     func setSelectedCellFrame(indexPath: IndexPath) {
         let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
