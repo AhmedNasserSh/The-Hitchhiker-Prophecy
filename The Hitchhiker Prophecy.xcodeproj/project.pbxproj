@@ -68,6 +68,8 @@
 		BE819CE1260906CA0010F6B4 /* CharactersData.json in Resources */ = {isa = PBXBuildFile; fileRef = BE819CE0260906CA0010F6B4 /* CharactersData.json */; };
 		BE819CEF260909AC0010F6B4 /* ResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CEE260909AC0010F6B4 /* ResultExtension.swift */; };
 		BE819CFB260912A60010F6B4 /* HomeSceneViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CFA260912A60010F6B4 /* HomeSceneViewControllerUITests.swift */; };
+		BE819D0F260937480010F6B4 /* CharacterDetailsSceneViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819D0E260937480010F6B4 /* CharacterDetailsSceneViewControllerUITests.swift */; };
+		BE819D18260938970010F6B4 /* AccessiblityIdsReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819D17260938970010F6B4 /* AccessiblityIdsReference.swift */; };
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +160,8 @@
 		BE819CF8260912A60010F6B4 /* The Hitchhiker ProphecyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Hitchhiker ProphecyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE819CFA260912A60010F6B4 /* HomeSceneViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewControllerUITests.swift; sourceTree = "<group>"; };
 		BE819CFC260912A60010F6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE819D0E260937480010F6B4 /* CharacterDetailsSceneViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneViewControllerUITests.swift; sourceTree = "<group>"; };
+		BE819D17260938970010F6B4 /* AccessiblityIdsReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessiblityIdsReference.swift; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -544,10 +548,20 @@
 		BE819CF9260912A60010F6B4 /* The Hitchhiker ProphecyUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BE819D16260938750010F6B4 /* Support */,
 				BE819CFA260912A60010F6B4 /* HomeSceneViewControllerUITests.swift */,
+				BE819D0E260937480010F6B4 /* CharacterDetailsSceneViewControllerUITests.swift */,
 				BE819CFC260912A60010F6B4 /* Info.plist */,
 			);
 			path = "The Hitchhiker ProphecyUITests";
+			sourceTree = "<group>";
+		};
+		BE819D16260938750010F6B4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BE819D17260938970010F6B4 /* AccessiblityIdsReference.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		EE489723C61A1E6A67306417 /* Pods */ = {
@@ -805,6 +819,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE819D18260938970010F6B4 /* AccessiblityIdsReference.swift in Sources */,
+				BE819D0F260937480010F6B4 /* CharacterDetailsSceneViewControllerUITests.swift in Sources */,
 				BE819CFB260912A60010F6B4 /* HomeSceneViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

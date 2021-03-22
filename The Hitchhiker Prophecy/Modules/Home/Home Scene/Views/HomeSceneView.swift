@@ -83,6 +83,11 @@ extension HomeSceneView {
         addSubview(contentView)
         collectionView.register(UINib(nibName: "HomeCharacterCollectionViewCell", bundle: nil)
                                 , forCellWithReuseIdentifier:HomeCharacterCollectionViewCell.identifier)
+        if #available(iOS 13.0, *) {
+            loadingIndicator.style = .large
+        } else {
+            loadingIndicator.style = .whiteLarge
+        }
     }
     private func loadViewFromNib() -> UIView {
         let bundle = Bundle(for: type(of:self))

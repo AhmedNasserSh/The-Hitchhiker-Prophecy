@@ -44,7 +44,7 @@
                         <action selector="didTapChangeLayout:" destination="-1" eventType="touchUpInside" id="siT-fo-txo"/>
                     </connections>
                 </button>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-pW-yWd">
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-pW-yWd">
                     <rect key="frame" x="8" y="54" width="50" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="RNy-tH-GxS"/>
