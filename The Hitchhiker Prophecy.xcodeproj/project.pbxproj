@@ -67,11 +67,19 @@
 		BE819CC2260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CB9260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift */; };
 		BE819CE1260906CA0010F6B4 /* CharactersData.json in Resources */ = {isa = PBXBuildFile; fileRef = BE819CE0260906CA0010F6B4 /* CharactersData.json */; };
 		BE819CEF260909AC0010F6B4 /* ResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CEE260909AC0010F6B4 /* ResultExtension.swift */; };
+		BE819CFB260912A60010F6B4 /* HomeSceneViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CFA260912A60010F6B4 /* HomeSceneViewControllerUITests.swift */; };
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		01D65F7C24913A160082F8FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D65F54249138A20082F8FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D65F5B249138A30082F8FF;
+			remoteInfo = "The Hitchhiker Prophecy";
+		};
+		BE819CFD260912A60010F6B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 01D65F54249138A20082F8FF /* Project object */;
 			proxyType = 1;
@@ -147,6 +155,9 @@
 		BE819CB9260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsScenePresneterTests.swift; sourceTree = "<group>"; };
 		BE819CE0260906CA0010F6B4 /* CharactersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CharactersData.json; sourceTree = "<group>"; };
 		BE819CEE260909AC0010F6B4 /* ResultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultExtension.swift; sourceTree = "<group>"; };
+		BE819CF8260912A60010F6B4 /* The Hitchhiker ProphecyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Hitchhiker ProphecyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE819CFA260912A60010F6B4 /* HomeSceneViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewControllerUITests.swift; sourceTree = "<group>"; };
+		BE819CFC260912A60010F6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +171,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		01D65F7424913A160082F8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE819CF5260912A60010F6B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,6 +261,7 @@
 			children = (
 				01D65F5E249138A30082F8FF /* The Hitchhiker Prophecy */,
 				01D65F7824913A160082F8FF /* The Hitchhiker ProphecyTests */,
+				BE819CF9260912A60010F6B4 /* The Hitchhiker ProphecyUITests */,
 				01D65F5D249138A30082F8FF /* Products */,
 				EE489723C61A1E6A67306417 /* Pods */,
 				355C258A732F834194B82F7B /* Frameworks */,
@@ -254,6 +273,7 @@
 			children = (
 				01D65F5C249138A30082F8FF /* The Hitchhiker Prophecy.app */,
 				01D65F7724913A160082F8FF /* The Hitchhiker ProphecyTests.xctest */,
+				BE819CF8260912A60010F6B4 /* The Hitchhiker ProphecyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -521,6 +541,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		BE819CF9260912A60010F6B4 /* The Hitchhiker ProphecyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE819CFA260912A60010F6B4 /* HomeSceneViewControllerUITests.swift */,
+				BE819CFC260912A60010F6B4 /* Info.plist */,
+			);
+			path = "The Hitchhiker ProphecyUITests";
+			sourceTree = "<group>";
+		};
 		EE489723C61A1E6A67306417 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -570,13 +599,31 @@
 			productReference = 01D65F7724913A160082F8FF /* The Hitchhiker ProphecyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BE819CF7260912A60010F6B4 /* The Hitchhiker ProphecyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE819CFF260912A60010F6B4 /* Build configuration list for PBXNativeTarget "The Hitchhiker ProphecyUITests" */;
+			buildPhases = (
+				BE819CF4260912A60010F6B4 /* Sources */,
+				BE819CF5260912A60010F6B4 /* Frameworks */,
+				BE819CF6260912A60010F6B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE819CFE260912A60010F6B4 /* PBXTargetDependency */,
+			);
+			name = "The Hitchhiker ProphecyUITests";
+			productName = "The Hitchhiker ProphecyUITests";
+			productReference = BE819CF8260912A60010F6B4 /* The Hitchhiker ProphecyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		01D65F54249138A20082F8FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = SWVL;
 				TargetAttributes = {
@@ -585,6 +632,10 @@
 					};
 					01D65F7624913A160082F8FF = {
 						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 01D65F5B249138A30082F8FF;
+					};
+					BE819CF7260912A60010F6B4 = {
+						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 01D65F5B249138A30082F8FF;
 					};
 				};
@@ -604,6 +655,7 @@
 			targets = (
 				01D65F5B249138A30082F8FF /* The Hitchhiker Prophecy */,
 				01D65F7624913A160082F8FF /* The Hitchhiker ProphecyTests */,
+				BE819CF7260912A60010F6B4 /* The Hitchhiker ProphecyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -628,6 +680,13 @@
 			files = (
 				BE819CE1260906CA0010F6B4 /* CharactersData.json in Resources */,
 				BE819C822608D7AE0010F6B4 /* CharactersResponseData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE819CF6260912A60010F6B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +801,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE819CF4260912A60010F6B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE819CFB260912A60010F6B4 /* HomeSceneViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -749,6 +816,11 @@
 			isa = PBXTargetDependency;
 			target = 01D65F5B249138A30082F8FF /* The Hitchhiker Prophecy */;
 			targetProxy = 01D65F7C24913A160082F8FF /* PBXContainerItemProxy */;
+		};
+		BE819CFE260912A60010F6B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D65F5B249138A30082F8FF /* The Hitchhiker Prophecy */;
+			targetProxy = BE819CFD260912A60010F6B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -958,6 +1030,44 @@
 			};
 			name = Release;
 		};
+		BE819D00260912A60010F6B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Hitchhiker ProphecyUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.The-Hitchhiker-ProphecyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Hitchhiker Prophecy";
+			};
+			name = Debug;
+		};
+		BE819D01260912A60010F6B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "The Hitchhiker ProphecyUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.The-Hitchhiker-ProphecyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Hitchhiker Prophecy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -984,6 +1094,15 @@
 			buildConfigurations = (
 				01D65F7E24913A160082F8FF /* Debug */,
 				01D65F7F24913A160082F8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE819CFF260912A60010F6B4 /* Build configuration list for PBXNativeTarget "The Hitchhiker ProphecyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE819D00260912A60010F6B4 /* Debug */,
+				BE819D01260912A60010F6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

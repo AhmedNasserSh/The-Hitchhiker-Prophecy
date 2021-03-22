@@ -15,12 +15,14 @@ class HomeCharacterCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     static var identifier =  "HomeCharacterCollectionViewCell"
-    
+
+
     // MARK: - Life Cycle
     override func awakeFromNib() {
         characterImageView.layer.cornerRadius = 8
         characterImageView.clipsToBounds = true
     }
+
     
     // MARK: - Setup
     func configure(with viewModel: HomeScene.Search.ViewModel) {

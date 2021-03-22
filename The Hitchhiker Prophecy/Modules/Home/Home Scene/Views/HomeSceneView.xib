@@ -33,6 +33,7 @@
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZ7-nm-c3G">
                     <rect key="frame" x="8" y="44" width="398" height="45"/>
+                    <accessibility key="accessibilityConfiguration" identifier="changeLayoutButtonAccessiblityIdentifier"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="saU-Tw-HtE"/>
                     </constraints>
