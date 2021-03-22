@@ -10,27 +10,27 @@ import XCTest
 @testable import The_Hitchhiker_Prophecy
 
 class HomeScenePresneterTests: XCTestCase {
-
+    
     override func setUpWithError() throws {
     }
-
+    
     override func tearDownWithError() throws {
     }
-
+    
     func testMappingCharacters() throws {
         // setup Dependencies
         let viewControllerMock = HomeSceneDisplayViewMock()
         let homeScenePresneter = HomeScenePresneter(displayView: viewControllerMock)
         
         // present respons charcters
-        MockHelper<Characters.Search.Output>().getMockup(jsonFileName: "CharactersResponseData") { (result) in
-            homeScenePresneter.presentCharacters(result)
-        }
+        let data =  ResponseMockHelper<Characters.Search.Output>().getMockResponse(jsonFileName: "CharactersResponseData")
+        homeScenePresneter.presentCharacters(data)
+        
         
         //update View With View Model
         XCTAssertEqual(viewControllerMock.viewModel.count, 1, "presenter dosen't update View Correctly")
         XCTAssertEqual(viewControllerMock.viewModel[0].name, "Hulk", "presenter dosen't map data Correctly")
-
+        
     }
     
     func testShowViewError() throws {
@@ -45,6 +45,6 @@ class HomeScenePresneterTests: XCTestCase {
         XCTAssertTrue(viewControllerMock.didShowError, "Presenter dosen't update view on error")
         
     }
-
-
+    
+    
 }

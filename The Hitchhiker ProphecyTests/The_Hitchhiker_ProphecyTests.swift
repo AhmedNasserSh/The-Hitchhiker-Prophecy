@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import The_Hitchhiker_Prophecy
 
 class The_Hitchhiker_ProphecyTests: XCTestCase {
 
@@ -18,5 +19,10 @@ class The_Hitchhiker_ProphecyTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testDigestEncryption() {
+        let authData = "1abcd1234"
+        let digest = authData.MD5()
+        XCTAssertEqual(digest, "ffd275c5130566a2916217b101f26150", "Auth Hash Encryption dosen't work")
+    }
 
 }

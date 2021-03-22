@@ -54,11 +54,19 @@
 		BE819C372608B4FB0010F6B4 /* HomeScenePresneterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C362608B4FB0010F6B4 /* HomeScenePresneterMock.swift */; };
 		BE819C3D2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C3C2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift */; };
 		BE819C822608D7AE0010F6B4 /* CharactersResponseData.json in Resources */ = {isa = PBXBuildFile; fileRef = BE819C812608D7AE0010F6B4 /* CharactersResponseData.json */; };
-		BE819C8A2608D8AE0010F6B4 /* MockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C892608D8AE0010F6B4 /* MockHelper.swift */; };
+		BE819C8A2608D8AE0010F6B4 /* ResponseMockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C892608D8AE0010F6B4 /* ResponseMockHelper.swift */; };
 		BE819C972608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819C962608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift */; };
 		BE819CA12608EB410010F6B4 /* HomeScenePresneterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CA02608EB410010F6B4 /* HomeScenePresneterTests.swift */; };
 		BE819CA52608EFE30010F6B4 /* HomeSceneInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CA42608EFE30010F6B4 /* HomeSceneInteractorMock.swift */; };
 		BE819CA92608F0A00010F6B4 /* HomeSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CA82608F0A00010F6B4 /* HomeSceneViewControllerTests.swift */; };
+		BE819CBA260904090010F6B4 /* CharachterDetailsScenePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CAF260904090010F6B4 /* CharachterDetailsScenePresenterMock.swift */; };
+		BE819CBC260904090010F6B4 /* CharachterDetailsSceneInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CB1260904090010F6B4 /* CharachterDetailsSceneInteractorMock.swift */; };
+		BE819CBD260904090010F6B4 /* CharachterDetailsSceneDisplayViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CB2260904090010F6B4 /* CharachterDetailsSceneDisplayViewMock.swift */; };
+		BE819CC0260904090010F6B4 /* CharacterDetailsInteractorSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CB7260904090010F6B4 /* CharacterDetailsInteractorSceneTests.swift */; };
+		BE819CC1260904090010F6B4 /* CharacterDetailsSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CB8260904090010F6B4 /* CharacterDetailsSceneViewControllerTests.swift */; };
+		BE819CC2260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CB9260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift */; };
+		BE819CE1260906CA0010F6B4 /* CharactersData.json in Resources */ = {isa = PBXBuildFile; fileRef = BE819CE0260906CA0010F6B4 /* CharactersData.json */; };
+		BE819CEF260909AC0010F6B4 /* ResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE819CEE260909AC0010F6B4 /* ResultExtension.swift */; };
 		C3A19B09940FB9B0F7AADF11 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE673059370D3D001872E6 /* Pods_The_Hitchhiker_Prophecy.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,11 +134,19 @@
 		BE819C362608B4FB0010F6B4 /* HomeScenePresneterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresneterMock.swift; sourceTree = "<group>"; };
 		BE819C3C2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneWorkerTypeMock.swift; sourceTree = "<group>"; };
 		BE819C812608D7AE0010F6B4 /* CharactersResponseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharactersResponseData.json; sourceTree = "<group>"; };
-		BE819C892608D8AE0010F6B4 /* MockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHelper.swift; sourceTree = "<group>"; };
+		BE819C892608D8AE0010F6B4 /* ResponseMockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMockHelper.swift; sourceTree = "<group>"; };
 		BE819C962608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneDisplayViewMock.swift; sourceTree = "<group>"; };
 		BE819CA02608EB410010F6B4 /* HomeScenePresneterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresneterTests.swift; sourceTree = "<group>"; };
 		BE819CA42608EFE30010F6B4 /* HomeSceneInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneInteractorMock.swift; sourceTree = "<group>"; };
 		BE819CA82608F0A00010F6B4 /* HomeSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewControllerTests.swift; sourceTree = "<group>"; };
+		BE819CAF260904090010F6B4 /* CharachterDetailsScenePresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharachterDetailsScenePresenterMock.swift; sourceTree = "<group>"; };
+		BE819CB1260904090010F6B4 /* CharachterDetailsSceneInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharachterDetailsSceneInteractorMock.swift; sourceTree = "<group>"; };
+		BE819CB2260904090010F6B4 /* CharachterDetailsSceneDisplayViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharachterDetailsSceneDisplayViewMock.swift; sourceTree = "<group>"; };
+		BE819CB7260904090010F6B4 /* CharacterDetailsInteractorSceneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsInteractorSceneTests.swift; sourceTree = "<group>"; };
+		BE819CB8260904090010F6B4 /* CharacterDetailsSceneViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneViewControllerTests.swift; sourceTree = "<group>"; };
+		BE819CB9260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsScenePresneterTests.swift; sourceTree = "<group>"; };
+		BE819CE0260906CA0010F6B4 /* CharactersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CharactersData.json; sourceTree = "<group>"; };
+		BE819CEE260909AC0010F6B4 /* ResultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultExtension.swift; sourceTree = "<group>"; };
 		E3CF87B7C4F610B29507908C /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,7 +275,9 @@
 		01D65F7824913A160082F8FF /* The Hitchhiker ProphecyTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE819C882608D89D0010F6B4 /* Helpers */,
 				BE819C2C2608AD120010F6B4 /* HomSceneTests */,
+				BE819CAC260903660010F6B4 /* CharachterDetailsSceneTests */,
 				01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */,
 				01D65F7B24913A160082F8FF /* Info.plist */,
 			);
@@ -413,7 +431,7 @@
 		BE819C2D2608AD250010F6B4 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				BE819C882608D89D0010F6B4 /* Helpers */,
+				BE819CE6260907150010F6B4 /* Data */,
 				BE819C2E2608AD310010F6B4 /* Mocks */,
 			);
 			path = Support;
@@ -443,10 +461,64 @@
 		BE819C882608D89D0010F6B4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BE819C812608D7AE0010F6B4 /* CharactersResponseData.json */,
-				BE819C892608D8AE0010F6B4 /* MockHelper.swift */,
+				BE819C892608D8AE0010F6B4 /* ResponseMockHelper.swift */,
+				BE819CEE260909AC0010F6B4 /* ResultExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BE819CAC260903660010F6B4 /* CharachterDetailsSceneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE819CB6260904090010F6B4 /* Classes */,
+				BE819CAD260904090010F6B4 /* Support */,
+			);
+			path = CharachterDetailsSceneTests;
+			sourceTree = "<group>";
+		};
+		BE819CAD260904090010F6B4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BE819CDF260906970010F6B4 /* Data */,
+				BE819CAE260904090010F6B4 /* Mocks */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BE819CAE260904090010F6B4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BE819CAF260904090010F6B4 /* CharachterDetailsScenePresenterMock.swift */,
+				BE819CB1260904090010F6B4 /* CharachterDetailsSceneInteractorMock.swift */,
+				BE819CB2260904090010F6B4 /* CharachterDetailsSceneDisplayViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BE819CB6260904090010F6B4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE819CB7260904090010F6B4 /* CharacterDetailsInteractorSceneTests.swift */,
+				BE819CB8260904090010F6B4 /* CharacterDetailsSceneViewControllerTests.swift */,
+				BE819CB9260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BE819CDF260906970010F6B4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BE819CE0260906CA0010F6B4 /* CharactersData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BE819CE6260907150010F6B4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BE819C812608D7AE0010F6B4 /* CharactersResponseData.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		EE489723C61A1E6A67306417 /* Pods */ = {
@@ -554,6 +626,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE819CE1260906CA0010F6B4 /* CharactersData.json in Resources */,
 				BE819C822608D7AE0010F6B4 /* CharactersResponseData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,14 +723,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE819CBC260904090010F6B4 /* CharachterDetailsSceneInteractorMock.swift in Sources */,
+				BE819CC2260904090010F6B4 /* CharacterDetailsScenePresneterTests.swift in Sources */,
+				BE819CC0260904090010F6B4 /* CharacterDetailsInteractorSceneTests.swift in Sources */,
 				BE819CA92608F0A00010F6B4 /* HomeSceneViewControllerTests.swift in Sources */,
-				BE819C8A2608D8AE0010F6B4 /* MockHelper.swift in Sources */,
+				BE819CBD260904090010F6B4 /* CharachterDetailsSceneDisplayViewMock.swift in Sources */,
+				BE819C8A2608D8AE0010F6B4 /* ResponseMockHelper.swift in Sources */,
 				BE819C372608B4FB0010F6B4 /* HomeScenePresneterMock.swift in Sources */,
 				BE819C3D2608B7C50010F6B4 /* HomeSceneWorkerTypeMock.swift in Sources */,
 				BE819CA12608EB410010F6B4 /* HomeScenePresneterTests.swift in Sources */,
 				BE819CA52608EFE30010F6B4 /* HomeSceneInteractorMock.swift in Sources */,
+				BE819CBA260904090010F6B4 /* CharachterDetailsScenePresenterMock.swift in Sources */,
 				BE819C972608EA9B0010F6B4 /* HomeSceneDisplayViewMock.swift in Sources */,
+				BE819CEF260909AC0010F6B4 /* ResultExtension.swift in Sources */,
 				BE819C312608ADA50010F6B4 /* HomeSceneInteractorTests.swift in Sources */,
+				BE819CC1260904090010F6B4 /* CharacterDetailsSceneViewControllerTests.swift in Sources */,
 				01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

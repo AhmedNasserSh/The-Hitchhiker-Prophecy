@@ -9,9 +9,10 @@
 import Foundation
 @testable import The_Hitchhiker_Prophecy
 class HomeSceneWorkerTypeMock: HomeWorkerType {
-    let mockHelper = MockHelper<Characters.Search.Output>()
+    let mockHelper = ResponseMockHelper<Characters.Search.Output>()
     
     func getCharacters(_ input: Characters.Search.Input, completion: @escaping (HomeScene.Search.Response) -> Void) {
-         mockHelper.getMockup(jsonFileName: "CharactersResponseData", completion: completion)
+        let data =  mockHelper.getMockResponse(jsonFileName: "CharactersResponseData")
+        completion(data)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  MockHelper.swift
+//  ResponseMockHelper.swift
 //  The Hitchhiker ProphecyTests
 //
 //  Created by Ahmed Nasser on 22/03/2021.
@@ -8,16 +8,17 @@
 
 import Foundation
 @testable import The_Hitchhiker_Prophecy
-class MockHelper<T:Codable> {
-    func getMockup(jsonFileName:String, completion:@escaping (Result<T,NetworkError>) -> ()){
+class ResponseMockHelper<T:Codable> {
+    func getMockResponse(jsonFileName:String) -> Result<T,NetworkError>{
         if let path = Bundle(for: type(of: self)).path(forResource: jsonFileName, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult =  try JSONDecoder().decode(T.self, from: data)
-                completion(.success(jsonResult))
+                return .success(jsonResult)
             } catch {
-                completion(.failure(.cannotParseResponse))
+                return .failure(.cannotParseResponse)
             }
         }
+        return .failure(.unknown)
     }
 }
