@@ -13,6 +13,7 @@ class HomeSceneView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var changeLayoutButton: UIButton!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     //MARK: - Properties
     var currentPage = 0
@@ -53,8 +54,22 @@ class HomeSceneView: UIView {
     
     //MARK: Actions
     @IBAction func didTapChangeLayout(_ sender: Any) {
-        changeLayoutButton.isUserInteractionEnabled = false
+        disableChangeLayoutButton(disable: true)
         horizontalOrientiation = !horizontalOrientiation
+    }
+    
+    //MARK: Events
+    func showLoadingView(show:Bool) {
+        if show {
+            loadingIndicator.startAnimating()
+        }else{
+            loadingIndicator.stopAnimating()
+        }
+        disableChangeLayoutButton(disable: show)
+    }
+    
+    func disableChangeLayoutButton(disable:Bool){
+        changeLayoutButton.isUserInteractionEnabled = !disable
     }
     
 }
@@ -110,7 +125,7 @@ extension HomeSceneView {
     
     func animateLayoutChange(animated:Bool = true){
         collectionView.setCollectionViewLayout(layout!, animated: animated)
-        self.changeLayoutButton.isUserInteractionEnabled = true
+        disableChangeLayoutButton(disable: false)
     }
     
     func reloadCollectionView() {

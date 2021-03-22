@@ -72,12 +72,14 @@ extension HomeSceneViewController: HomeSceneDisplayView {
     func didFetchCharacters(viewModel: [HomeScene.Search.ViewModel]) {
         homeSceneView.isHidden = false
         self.herosItems = viewModel
+        self.homeSceneView.showLoadingView(show: false)
         self.homeSceneView.reloadCollectionView()
     }
     
     func failedToFetchCharacters(error: Error) {
         errorView.isHidden = false
         homeSceneView.isHidden = true
+        self.homeSceneView.showLoadingView(show: true)
     }
 }
 

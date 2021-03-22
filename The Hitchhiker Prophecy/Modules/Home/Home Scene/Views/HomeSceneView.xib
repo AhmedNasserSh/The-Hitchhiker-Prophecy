@@ -13,6 +13,7 @@
                 <outlet property="changeLayoutButton" destination="vZ7-nm-c3G" id="Y06-pC-x6F"/>
                 <outlet property="collectionView" destination="aAe-81-RVV" id="m8f-bz-ZFU"/>
                 <outlet property="contentView" destination="6Pu-Ad-egK" id="4t7-Qt-COz"/>
+                <outlet property="loadingIndicator" destination="tuv-pW-yWd" id="pKB-8k-sVp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -42,6 +43,13 @@
                         <action selector="didTapChangeLayout:" destination="-1" eventType="touchUpInside" id="siT-fo-txo"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-pW-yWd">
+                    <rect key="frame" x="8" y="54" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="RNy-tH-GxS"/>
+                    </constraints>
+                    <color key="color" red="0.94117647059999998" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="ASN-QL-rYv"/>
             <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
@@ -51,6 +59,9 @@
                 <constraint firstItem="aAe-81-RVV" firstAttribute="top" secondItem="vZ7-nm-c3G" secondAttribute="bottom" id="FaV-M2-Uge"/>
                 <constraint firstItem="ASN-QL-rYv" firstAttribute="trailing" secondItem="vZ7-nm-c3G" secondAttribute="trailing" constant="8" id="NHq-xk-tZz"/>
                 <constraint firstItem="ASN-QL-rYv" firstAttribute="bottom" secondItem="aAe-81-RVV" secondAttribute="bottom" constant="20" id="Py9-gr-Z1r"/>
+                <constraint firstItem="aAe-81-RVV" firstAttribute="top" secondItem="tuv-pW-yWd" secondAttribute="bottom" constant="10" id="fEn-w0-HX9"/>
+                <constraint firstItem="tuv-pW-yWd" firstAttribute="centerY" secondItem="vZ7-nm-c3G" secondAttribute="centerY" id="gp9-Ew-nPf"/>
+                <constraint firstItem="tuv-pW-yWd" firstAttribute="leading" secondItem="ASN-QL-rYv" secondAttribute="leading" constant="8" id="jn9-y0-3S9"/>
                 <constraint firstItem="ASN-QL-rYv" firstAttribute="trailing" secondItem="aAe-81-RVV" secondAttribute="trailing" id="lc6-0N-Zhx"/>
                 <constraint firstItem="vZ7-nm-c3G" firstAttribute="leading" secondItem="ASN-QL-rYv" secondAttribute="leading" constant="8" id="o4I-SZ-UaI"/>
             </constraints>
