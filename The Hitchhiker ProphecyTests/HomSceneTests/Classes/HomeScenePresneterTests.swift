@@ -28,7 +28,7 @@ class HomeScenePresneterTests: XCTestCase {
         
         
         //update View With View Model
-        XCTAssertEqual(viewControllerMock.viewModel.count, 1, "presenter dosen't update View Correctly")
+        XCTAssertEqual(viewControllerMock.viewModel.count, 1, "Presenter dosen't update View Correctly")
         XCTAssertEqual(viewControllerMock.viewModel[0].name, "Hulk", "presenter dosen't map data Correctly")
         
     }

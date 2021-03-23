@@ -9,6 +9,7 @@
 import Foundation
 @testable import The_Hitchhiker_Prophecy
 class ResponseMockHelper<T:Codable> {
+    //MARK: parse data in json model to T Model
     func getMockResponse(jsonFileName:String) -> Result<T,NetworkError>{
         if let path = Bundle(for: type(of: self)).path(forResource: jsonFileName, ofType: "json") {
             do {

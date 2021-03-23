@@ -8,6 +8,7 @@
 
 import Foundation
 extension Result {
+    //MARK: get the success result only
     func getSuccessData() -> Success? {
         switch self {
         case .success(let data):

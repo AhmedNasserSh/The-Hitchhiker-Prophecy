@@ -8,11 +8,12 @@
 
 import Foundation
 extension String {
+    //MARK: GET MD5 digest from string
     func MD5() -> String {
         return hex_md5(self).lowercased()
     }
 
-    // MARK: - Functions
+    // MARK: - Encryption Functions
     func hex_md5(_ input: String) -> String {
       return rstr2hex(rstr_md5(str2rstr_utf8(input)))
     }

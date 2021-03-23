@@ -25,6 +25,7 @@ class HomeScenePresneter: HomeScenePresentationLogic {
         }
     }
     
+    //MARK: Map response data to ViewModel data
     private func map(output:Characters.Search.Output) -> [HomeScene.Search.ViewModel] {
         let results = output.data
         let viewModels = results.results.map { (charcter) -> HomeScene.Search.ViewModel in

@@ -50,7 +50,7 @@ class HomeSceneViewController: UIViewController {
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        // handle device oriention
+        // adjust collection view layout on device rotation
         coordinator.animate { [weak self] (_) in
             self?.homeSceneView?.setCollectionViewLayout(animated: false)
         } completion: { (_) in
@@ -61,6 +61,7 @@ class HomeSceneViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func didTapReload(_ sender: Any) {
+        //reload data on error
         errorView.isHidden = true
         interactor?.fetchCharacters()
     }
@@ -103,7 +104,7 @@ extension HomeSceneViewController :UICollectionViewDataSource {
 //MARK: - Collection View Delegate
 extension HomeSceneViewController :UICollectionViewDelegate ,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        homeSceneView.setSelectedCellFrame(indexPath: indexPath)
+        homeSceneView.saveSelectedCellFrame(indexPath: indexPath)
         router?.routeToCharacterDetailsWithCharacter(at: indexPath.row)
     }
     

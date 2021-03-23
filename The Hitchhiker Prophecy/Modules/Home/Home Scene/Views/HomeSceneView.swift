@@ -54,6 +54,7 @@ class HomeSceneView: UIView {
     
     //MARK: Actions
     @IBAction func didTapChangeLayout(_ sender: Any) {
+        // change layout oriention
         disableChangeLayoutButton(disable: true)
         horizontalOrientiation = !horizontalOrientiation
     }
@@ -100,6 +101,7 @@ extension HomeSceneView {
 
 //MARK: - Collection View Layout Change
 extension HomeSceneView {
+    //MARK: set the layout for the collection View
     func setCollectionViewLayout(animated:Bool = true) {
         if horizontalOrientiation {
             setHorizontalLayout()
@@ -108,6 +110,7 @@ extension HomeSceneView {
         }
     }
     
+    //MARK: generate the horizontal layout for the collection View
     func setHorizontalLayout(animated:Bool = true) {
         layout = UICollectionViewFlowLayout()
         layout?.scrollDirection = .horizontal
@@ -122,12 +125,14 @@ extension HomeSceneView {
         animateLayoutChange(animated: animated)
     }
     
+    //MARK: generate the vertical layout for the collection View
     func setVerticalLayout(animated:Bool = true) {
         layout = UICollectionViewFlowLayout()
         layout?.scrollDirection = .vertical
         animateLayoutChange(animated: animated)
     }
     
+    //MARK: animate collection view layout change
     func animateLayoutChange(animated:Bool = true){
         collectionView.setCollectionViewLayout(layout!, animated: animated)
         disableChangeLayoutButton(disable: false)
@@ -139,9 +144,10 @@ extension HomeSceneView {
 }
 //MARK: - Collection View Paging
 extension HomeSceneView {
+    
+    //MARK: on horizontal scrolling center the current cell with respect to peeked cells
     func adjustHorizontalCell(scrollView: UIScrollView,withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) -> CGPoint? {
         if !horizontalOrientiation { return nil}
-        
         let pageWidth = Float((itemWidth ?? 0 ) + itemSpacing)
         let targetXContentOffset = Float(targetContentOffset.pointee.x)
         let contentWidth = Float(collectionView!.contentSize.width  )
@@ -162,9 +168,10 @@ extension HomeSceneView {
         return CGPoint (x: CGFloat(newPage * pageWidth) , y: targetContentOffset.pointee.y)
     }
 }
-// MARK: HomeCharacterCollectionViewCell Animation 
+// MARK: Transition Animation
 extension HomeSceneView  {
-    func setSelectedCellFrame(indexPath: IndexPath) {
+    //MARK: save the current selected cell frame  in order to be used in transition animation
+    func saveSelectedCellFrame(indexPath: IndexPath) {
         let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
         selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview)
         selectedIndex = indexPath.row
