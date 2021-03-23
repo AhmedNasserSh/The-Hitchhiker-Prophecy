@@ -45,10 +45,7 @@
                     </connections>
                 </button>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-pW-yWd">
-                    <rect key="frame" x="8" y="54" width="50" height="25"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="RNy-tH-GxS"/>
-                    </constraints>
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                     <color key="color" red="0.94117647059999998" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </activityIndicatorView>
             </subviews>
@@ -60,11 +57,10 @@
                 <constraint firstItem="aAe-81-RVV" firstAttribute="top" secondItem="vZ7-nm-c3G" secondAttribute="bottom" id="FaV-M2-Uge"/>
                 <constraint firstItem="ASN-QL-rYv" firstAttribute="trailing" secondItem="vZ7-nm-c3G" secondAttribute="trailing" constant="8" id="NHq-xk-tZz"/>
                 <constraint firstItem="ASN-QL-rYv" firstAttribute="bottom" secondItem="aAe-81-RVV" secondAttribute="bottom" constant="20" id="Py9-gr-Z1r"/>
-                <constraint firstItem="aAe-81-RVV" firstAttribute="top" secondItem="tuv-pW-yWd" secondAttribute="bottom" constant="10" id="fEn-w0-HX9"/>
-                <constraint firstItem="tuv-pW-yWd" firstAttribute="centerY" secondItem="vZ7-nm-c3G" secondAttribute="centerY" id="gp9-Ew-nPf"/>
-                <constraint firstItem="tuv-pW-yWd" firstAttribute="leading" secondItem="ASN-QL-rYv" secondAttribute="leading" constant="8" id="jn9-y0-3S9"/>
+                <constraint firstItem="tuv-pW-yWd" firstAttribute="centerY" secondItem="6Pu-Ad-egK" secondAttribute="centerY" id="Zz2-rh-J0t"/>
                 <constraint firstItem="ASN-QL-rYv" firstAttribute="trailing" secondItem="aAe-81-RVV" secondAttribute="trailing" id="lc6-0N-Zhx"/>
                 <constraint firstItem="vZ7-nm-c3G" firstAttribute="leading" secondItem="ASN-QL-rYv" secondAttribute="leading" constant="8" id="o4I-SZ-UaI"/>
+                <constraint firstItem="tuv-pW-yWd" firstAttribute="centerX" secondItem="6Pu-Ad-egK" secondAttribute="centerX" id="r06-ct-8Hd"/>
             </constraints>
             <point key="canvasLocation" x="187" y="145"/>
         </view>
